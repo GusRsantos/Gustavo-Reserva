@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome...">
+        <br> <br>
+        <label for="meuemail">Digite seu email:</label>
+        <input type="email" name="email">
+        <br> <br>
+        <label for="senha">Digite sua senha:</label>
+        <input type="password" name="senha">
+        <br> <br>
+        <label for="dr_nasc">Data de nascimento</label>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="time">
+        <br> <br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone">
+        <label for="botao">Botão</label>
+        <input type="button" name="botao" value="ola">
+        <br><br>
+        <input type="submit" value="Acabou">
+        <br><br>
+        <label for="textao">Textão</label>
+        <textarea name="textao" placeholder="Insira um texto..."></textarea>
+        <br><br>~
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor">
+        <br><br>
+        <label for="cor">Número:</label>
+        <input type="number">
+        <label for="range">Barrinha</label>
+        0<input type="range" min="0" max="100" value="20" step="10"> 100
+        <br><br>
+        <label for="escolha"> Escolha seu curso:</label>
+        <input type="radio" name="escolha"> Automação Industrial>
+        <input type="radio" name="escolha"> Eletrotécnica>
+        <input type="radio" name="escolha" checked> DDS>   
+        <br><br>
+        <label for="caixinha">Tecnologias</label>
+        <br>
+        <input type="checkbox" name="tec1" value="zap"> Whatsapp
+        <input type="checkbox" name="tec2" value="robo"> Robótica
+        <input type="checkbox" name="tec3" value="pneu"> Pneu
+        <input type="checkbox" name="tec4" value="predio"> Prédio
+        <br><br>
+        <label for="heroi">Escolha seu herói:</label>
+        <select name="heroi">
+            <option value="Batman">Batman</option>
+            <option value="Flash">Flash</option>
+            <option value="Batman">kratos</option>
+            <option value="KND">KND</option>
+        </select>
+        <br> <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Acabou">
+    </form>
+</body>
+
+</html>
