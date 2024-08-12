@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <h1>Formulário</h1>
+        <br>
+        <fieldset>
+            <br>
+            <legend>Dados pessoais</legend> 
+    <label>Nome:<input type="text" name="nome" /></label><br />
+    <br>
+    <label>Endereço:<input type="text" name="nome" /></label><br />
+    <br>
+    <label>Cidade:<input type="text" name="idade" /></label><br />
+    <br>
+    <label>Estado:
+        <select name="estado">
+            <option value="em"> Espirito Santo</option>
+            <option value="nt"> Rio de Janeiro</option>
+             <option value="ns"> São Paulo</option>
+             <option value="ns"> Minas Gerais</option>
+         </select>
+         </label>
+        </fieldset> 
+<br>
+   <fieldset>
+        <legend>Dados profissionais</legend>
+        
+            <br>
+                <text>Natureza de cargo</text>
+                <br>
+                <input type="radio" name="cargo" value="1" checked> Gerência
+                <input type="radio" name="cargo" value="2" > Financeiro
+                <input type="radio" name="cargo" value="3" > Recepção
+                <input type="radio" name="cargo" value="3" > Administrativo
+                <input type="radio" name="cargo" value="3" > Jurídico
+<br> 
+<br>
+        <text>Área de interesse</text>
+        <br>
+           <input type="checkbox" name="cargo" value="1" checked> Computação
+                <input type="checkbox" name="cargo" value="2" > Biologia
+                <input type="checkbox" name="cargo" value="3" > Meio Ambiente
+                <input type="radio" name="cargo" value="3" > Engenharia
+                <input type="radio" name="cargo" value="3" > História
+
+
+<p>Mini-currículo:<textarea name="obs"
+                         cols="45" rows="5"></textarea></p>
+            </textarea>
+
+   </fieldset>
+<br>
+   <input type="reset" value="Enviar">
+   <input type="submit" value="Limpar">
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
