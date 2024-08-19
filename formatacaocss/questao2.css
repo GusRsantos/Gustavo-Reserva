@@ -1,0 +1,39 @@
+body{
+    background-color: aqua;
+
+}
+
+P{
+    background-color: greenyellow;
+}
+
+.imagem1{
+    background-image: url('https://chocolate.co.ao/wp-content/uploads/2021/08/6fe93cfbe6a3891d9ffc-51.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.imagem2{
+    background-image: url('https://chocolate.co.ao/wp-content/uploads/2021/08/6fe93cfbe6a3891d9ffc-51.jpg');
+    background-repeat: repeat-y
+}
+
+.imagem3{
+    background-image: url('https://chocolate.co.ao/wp-content/uploads/2021/08/6fe93cfbe6a3891d9ffc-51.jpg');
+    background-repeat: no-repeat;
+}
+
+.imagem4{
+    background-image: url('https://chocolate.co.ao/wp-content/uploads/2021/08/6fe93cfbe6a3891d9ffc-51.jpg');
+    background-repeat: no-repeat;
+    background-position: center center ;
+}
+
+.imagem5{
+    background-color: yellow;
+    background-image: url('https://chocolate.co.ao/wp-content/uploads/2021/08/6fe93cfbe6a3891d9ffc-51.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll
+}
