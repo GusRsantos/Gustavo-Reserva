@@ -1,34 +1,114 @@
 
-.header{
+/* Add some basic styling to the header */
+.header {
+    background-color: rgb(32, 41, 173);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the logo */
+  .logo {
+    margin-right: 20px;
+  }
+  
 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: rgb(32, 41, 173); ;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: 600;
-    overflow: hidden;
-}
 
 .menu {
     list-style: none;
-    float: right;
-    color:whitesmoke
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: flex-end; 
 }
 
-li {
-    display: inline-block;
-    padding: 5px;
-    margin-right: 15px;
-    color: white;
+
+.menu li {
+    margin-left: 20px; 
 }
 
-li:hover {
-    color: black;
-    background-color: white;
-    border-radius: 10px;
+
+.menu li a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    box-shadow: none;
 }
+
+/* Estilos para quando o mouse passa sobre os links */
+.menu li a:hover {
+    color: #ddd; /* Alteração opcional da cor ao passar o mouse */
+}
+
+/* Centralizar o primeiro cabeçalho (CURSOS) */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Contêiner para os elementos gráficos */
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Estilo para os elementos quadrangulares */
+.course-box {
+    background-color: #f0f0f0; /* Cor de fundo do quadrado */
+    padding: 20px;
+    border-radius: 10px; /* Arredondamento leve das bordas */
+    width: 250px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+}
+
+/* Estilo para os cabeçalhos <h2> dentro do quadrado */
+.course-box h2 {
+    margin-top: 0;
+}
+
+/* Estilo para os links dentro do quadrado */
+.course-box a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0645AD;
+    font-weight: bold;
+}
+
+.course-box a:hover {
+    color: #0A84FF; /* Cor ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .logo{
     color: white;
@@ -65,9 +145,9 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(32, 41, 173); /* Cor da barra */
-    color: white; /* Cor do texto dentro da barra */
+    background-color: rgb(32, 41, 173); 
+    color: white;
     text-align: center;
-    padding: 15px 0; /* Espaçamento vertical da barra */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    padding: 15px 0; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
 }
