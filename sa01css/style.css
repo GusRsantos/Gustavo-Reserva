@@ -108,13 +108,13 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
 }
 
-
 /* Estilos para o contêiner dos cursos */
 .courses-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
+    box-shadow: 0 4px px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
 }
 
 /* Estilo para as caixas de curso */
@@ -155,19 +155,91 @@ main {
     color: rgb(69, 191, 214); 
 }
 
-/* Estilo para o rodapé (barra) */
-.barra {
-    background-color: rgb(32, 41, 173);
-    color: white;
+
+/* Estilo para a caixa de informações no main */
+.info-box {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.info-box h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 2px solid rgb(32, 41, 173);
+    padding-bottom: 10px;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.info-box ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Ajuste de margens para maior clareza entre seções */
+.info-box ul li::before {  
+    margin-right: 8px;
+    color: rgb(32, 41, 173);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para o rodapé */
+footer.barra {
+    background-color:rgb(32, 41, 173);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer.barra nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer.barra nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+footer.barra nav a img {
+    margin-right: 8px;
+}
+
+footer.barra p {
+    flex: 1;
     text-align: center;
-    padding: 15px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);  
-    }
+    margin: 0;
+    font-size: 0.9em;
+}
 
-    .barra a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold
-    }
+
     
-
