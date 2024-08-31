@@ -1,25 +1,26 @@
-/* Reset básico e box-sizing para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Fonte moderna e elegante */
-    background-color: #f4f4f9; /* Cor de fundo suave */
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #f4f4f9;
+
 }
 
-/* Estilo para o corpo */
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Estilos para o cabeçalho */
 .header {
     width: 100%;
     height: 80px;
@@ -52,14 +53,13 @@ body {
 }
 
 .material-symbols-outlined {
-    font-variation-settings: 
-        'FILL' 0, 
-        'wght' 900, 
-        'GRAD' 0, 
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 900,
+        'GRAD' 0,
         'opsz' 48;
 }
 
-/* Estilo para o menu de navegação */
 .menu {
     list-style: none;
     display: flex;
@@ -82,7 +82,6 @@ body {
     color: #ddd;
 }
 
-/* Wrapper para todo o conteúdo da página */
 .content-wrapper {
     min-height: 100%;
     display: flex;
@@ -97,7 +96,6 @@ main {
     max-width: 1200px;
 }
 
-/* Formulário de Cadastro */
 .form-container {
     background-color: white;
     padding: 40px;
@@ -148,7 +146,7 @@ main {
     background-color: #45bfd6;
 }
 
-/* Estilo para a introdução */
+
 .intro {
     background-color: #fff;
     padding: 30px;
@@ -170,7 +168,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Contêiner dos cursos */
+
 .courses-container {
     display: flex;
     justify-content: center;
@@ -180,7 +178,7 @@ main {
     width: 100%;
 }
 
-/* Caixas de curso */
+
 .course-box {
     background-color: #f9f9f9;
     padding: 20px;
@@ -204,14 +202,13 @@ main {
     margin-bottom: 15px;
 }
 
-/* Estilo para os cabeçalhos dentro das caixas de curso */
+
 .course-box h2 {
     margin-top: 0;
     font-size: 1.4em;
     color: #2029ad;
 }
 
-/* Links dentro das caixas de curso */
 .course-box a {
     display: block;
     margin-top: 15px;
@@ -225,7 +222,6 @@ main {
     color: #45bfd6;
 }
 
-/* Estilo para a caixa de informações no main */
 .info-box {
     background-color: #f4f4f9;
     padding: 30px;
@@ -261,7 +257,6 @@ main {
     color: #333;
 }
 
-/* Rodapé */
 footer.barra {
     background-color: #2029ad;
     color: #fff;
