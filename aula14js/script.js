@@ -18,8 +18,10 @@ var minutos = document.getElementById("minutos")
 var segundos = document.getElementById("segundos")
 var textoSaudacao = document.getElementById("saudacaoTexto")
 
-var diasSemana = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FERIA', 'SEXTA-FEIRA', 'SÁBADO']
 
+var diasSemana = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FERIA', 'SEXTA-FEIRA', 'SÁBADO']
+var nomesMes = ['JANEIRO', 'FEVEREIRO', 'MARÇO', 'ABRIL', 'MAIO', 'JUNHO', 'JULHO', 'AGOSTO', 'SETEMBRO', 'OUTUBRO', 'NOVEMBRO', 'DEZEMBRO']
+var nomesAno = ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
 var cumprimento = trocaSaudacao()
 
 var atualizaRelogio = setInterval(function () {
@@ -28,7 +30,8 @@ var atualizaRelogio = setInterval(function () {
     var minutoAtual = dataAtual.getMinutes()
     var segundoAtual = dataAtual.getSeconds()
     var diaAtual = dataAtual.getDay()
-
+    var anoAtual = dataAtual.getFullYear()
+    var mesAtual = dataAtual.getMonth()
 
     if (horaAtual<10)
         horaAtual = "0" + horaAtual
@@ -39,10 +42,14 @@ var atualizaRelogio = setInterval(function () {
     if (segundoAtual<10)
         segundoAtual = "0" + segundoAtual
 
+    if(anoAtual <10)
+        anoAtual = "0" + anoAtual
+
     horas.textContent = horaAtual
     minutos.textContent = minutoAtual
     segundos.textContent = segundoAtual
-    textoSaudacao.textContent = `${cumprimento} / ${diasSemana[diaAtual]}`
+    textoSaudacao.textContent = `${cumprimento} / ${anoAtual} / ${mesAtual}
+     ${diasSemana[diaAtual]}`
 
 })
 
@@ -54,6 +61,6 @@ function trocaSaudacao(horas) {
     else if (horas<18)
         return 'Boa Tarde'
     else
-        return 'boa Noite'
+        return 'Boa Noite'
 }
 
